@@ -1,13 +1,13 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const PostPreview = (props) => {
   return (
     <div>
         <div className="post-preview">
-            <a href="post.html">
+            <Link to="/post">
             <h2 className="post-title">{props.title}</h2>
             <h3 className="post-subtitle">{props.subtitle}</h3>
-            </a>
+            </Link>
             <p className="post-meta">
             Posted by 
             <a href="#!"> {props.author} </a>
